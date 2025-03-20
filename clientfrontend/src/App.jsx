@@ -21,8 +21,8 @@ const App = () => {
               <Route path="/signin" element={<SignInPage />} />
               <Route path="/account" element={<AccountPage />} />
               <Route path="/saved" element={<SavedPage />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
-            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </SavedActivitiesProvider>

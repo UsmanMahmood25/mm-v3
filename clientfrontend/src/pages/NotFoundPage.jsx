@@ -1,12 +1,10 @@
 // pages/NotFoundPage.jsx
 
 import React from "react";
-import Header from "../components/layout/Header";
 
 export const NotFound = () => {
     return (
         <>
-            <Header />
             <div className="flex items-center justify-center h-screen text-center">
                 <div>
                     <h1 className="text-3xl font-bold text-purple-500">
