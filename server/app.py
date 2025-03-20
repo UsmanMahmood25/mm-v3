@@ -645,4 +645,6 @@ def weather():
     return jsonify({"location": latest_location, "weather": latest_weather})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5001, debug=True)
+    # Use the PORT environment variable or default to 5000
+    port = int(os.environ.get("PORT", 5001))  # Render assigns this variable automatically
+    app.run(host="0.0.0.0", port=port, debug=False)
