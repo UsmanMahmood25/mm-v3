@@ -8,7 +8,7 @@ import AccountSettings from '../components/account/AccountSettings';
 import ActivityCard from '../components/activities/ActivityCard';
 import axios from 'axios';
 
-const API_BASE_URL = "http://localhost:5001";
+const API_BASE_URL = "https://mm-v3.onrender.com";
 
 const AccountPage = () => {
   const navigate = useNavigate();

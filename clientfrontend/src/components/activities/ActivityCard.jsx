@@ -6,7 +6,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useSavedActivities } from '../../context/SavedActivitiesContext';
 import ActivityDetailsModal from './ActivityDetails';
 
-const API_BASE_URL = "http://localhost:5001"; 
+const API_BASE_URL = "https://mm-v3.onrender.com"; 
 
 const ActivityCard = ({ activity }) => {
   const { title, category, location, weather, description } = activity;

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-const API_BASE_URL = 'http://localhost:5001';
+const API_BASE_URL = 'https://mm-v3.onrender.com';
 
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
