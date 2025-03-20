@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://mm-v3-frontend.onrender.com"])
 
 GOOGLE_API_KEY = os.getenv("GOOGLEAPI")
 WEATHER_API_KEY = os.getenv("WEATHERAPI")
