@@ -13,6 +13,11 @@ from dotenv import load_dotenv
 
 app = Flask(__name__)
 app.secret_key = "kbo7c43w7898jbs"  # Required for session management
+app.config.update(
+    SESSION_COOKIE_SAMESITE='None',  # Allow cross-origin cookies
+    SESSION_COOKIE_SECURE=True,      # Only send cookies over HTTPS
+    SESSION_COOKIE_HTTPONLY=True     # Prevent client-side JavaScript access
+)
 CORS(app, supports_credentials=True)  # Enable CORS for frontend-backend communication
 
 # Database connection configuration
