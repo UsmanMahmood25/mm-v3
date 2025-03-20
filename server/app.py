@@ -18,7 +18,7 @@ app.config.update(
     SESSION_COOKIE_SECURE=True,      # Only send cookies over HTTPS
     SESSION_COOKIE_HTTPONLY=True     # Prevent client-side JavaScript access
 )
-CORS(app, supports_credentials=True)  # Enable CORS for frontend-backend communication
+CORS(app, origins=["https://mm-v3-frontend.onrender.com"], supports_credentials=True)  # Enable CORS for frontend-backend communication
 
 # Database connection configuration
 DB_CONFIG = {

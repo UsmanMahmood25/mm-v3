@@ -10,7 +10,7 @@ from google import genai
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["https://mm-v3-2t30.onrender.com"])
+CORS(app, origins=["https://mm-v3-frontend.onrender.com"])
 
 GEMINI_API_KEY = os.getenv("LLM_API_KEY")
 
